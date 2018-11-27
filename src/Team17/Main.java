@@ -1,6 +1,5 @@
 package Team17;
 
-import java.util.Scanner;
 import java.util.*;
 
 public class Main {
@@ -30,6 +29,8 @@ public class Main {
 		 case 3: //Shuffle
 			 break;
 		 case 4://Find the largest prime
+			 LargestPrime l=new LargestPrime(arr);
+			 System.out.println( "Largest Prime = "+ l.largest_prime);
 			 break;
 		 case 5://Find the smallest prime
 			 break;
@@ -39,8 +40,8 @@ public class Main {
 			 break;
 		 case 8:
 		 {
-			 Count_Primes obj = null;
-			 System.out.println("The number of prime numbers:"+obj.Count_Primes(arr));
+			 /*Count_Primes obj = null;
+			 System.out.println("The number of prime numbers:"+obj.Count_Primes(arr));*/
 		 }
 			 break;
 		 case 9://Reverse array
@@ -64,8 +65,8 @@ public class Main {
 		 case 18://option to perform all developed functions
 		 {
 			 //Add your function here also
-			 Count_Primes obj = null;
-			 System.out.println("The number of prime numbers:"+obj.Count_Primes(arr));
+			/* Count_Primes obj = null;
+			 System.out.println("The number of prime numbers:"+obj.Count_Primes(arr));*/
 		 }
 			 break;
 		default:
