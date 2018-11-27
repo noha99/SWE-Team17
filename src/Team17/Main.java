@@ -21,7 +21,7 @@ public class Main {
 		 System.out.println("13-Get the minimum 3 numbers\t14-Get average\t15-Get median\t16-Return only primes\t17-Zero if less than zero\t18-Execute all functions");
 		 System.out.println("Enter the number of which function to be executed:");
 		 choice=input.nextInt();
-		 switch(choice)   //Add your functions 
+		 switch(choice)   //Add your functions
 		 {
 		 case 1:  //Most repeated value
 			 break;
@@ -38,10 +38,6 @@ public class Main {
 		 case 7: //Check sorted
 			 break;
 		 case 8:
-		 {
-			 Count_Primes obj = null;
-			 System.out.println("The number of prime numbers:"+obj.Count_Primes(arr));
-		 }
 			 break;
 		 case 9://Reverse array
 			 break;
@@ -59,14 +55,15 @@ public class Main {
 			 break;
 		 case 16://Return only primes
 			 break;
-		 case 17://Zero if less than zero
+		 case 17:
+		 	NegativeToZero negativeToZero = new NegativeToZero(arr);
+		 	 System.out.println(Arrays.toString(negativeToZero.NegativeToZero(arr)));
 			 break;
 		 case 18://option to perform all developed functions
-		 {
 			 //Add your function here also
-			 Count_Primes obj = null;
-			 System.out.println("The number of prime numbers:"+obj.Count_Primes(arr));
-		 }
+			 negativeToZero = new NegativeToZero(arr);
+			 System.out.println("Zero if less than zero \n" + Arrays.toString(negativeToZero.NegativeToZero(arr)));
+
 			 break;
 		default:
 		System.out.println("Invalid input!");
