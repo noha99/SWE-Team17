@@ -1,8 +1,9 @@
 package Team17;
 
 public class LargestPrime {
-	int largest_prime=-1;
+	int largest_prime;
 	LargestPrime(int []arr) {
+		largest_prime=-1;
 		for(int i=0;i<arr.length;i++) {
 			boolean isPrime=true;
 			for(int j=2;j<=arr[i]/2;j++) {

@@ -65,6 +65,8 @@ public class Main {
 		 case 18://option to perform all developed functions
 		 {
 			 //Add your function here also
+			 LargestPrime x=new LargestPrime(arr);
+			 System.out.println( "Largest Prime = "+ x.largest_prime);
 			/* Count_Primes obj = null;
 			 System.out.println("The number of prime numbers:"+obj.Count_Primes(arr));*/
 		 }
